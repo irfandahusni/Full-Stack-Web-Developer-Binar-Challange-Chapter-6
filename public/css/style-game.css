@@ -1,0 +1,166 @@
+/*================= DESKTOP =====================*/
+@media only screen and (max-width: 1920px){
+    html {
+        background-color : #9b835f;
+        max-width : 100%;
+    }
+
+    body {
+        font-family : 'Bebas Neue';
+    }
+
+    #header-container {
+        display: flex;
+        /* flex-wrap: nowrap; */
+        flex-direction : row;
+        /* background-color: DodgerBlue; */
+        align-items:center;
+        justify-content: flex-start;
+    }
+
+    #header-container > div {
+        /* background-color: #f1f1f1; */
+        width: 40px;
+        margin: 2px;
+        text-align: center;
+        /* line-height: 100%; */
+      }
+
+    #header-container > div > a {
+        font-size: 50px;
+        color :#724c21;
+        text-decoration: none;
+    }
+
+    #header-container > div > img {
+        height : 40px;
+        width : auto;
+        transform: scale(0.8);
+    }
+
+    #header-container > #header-text {
+        flex-basis : 50%;
+        font-size: 20px;
+        text-align: left;
+        color : sandybrown;
+    }
+
+    .player-selection > input {
+        height : 60px;
+        width : auto;
+    }
+
+    .com-selection > input {
+        height : 60px;
+        width : auto;
+    }
+
+    #reset > input {
+        height : 30px;
+        width : auto;
+    }
+
+    #main-content {
+        display: grid;
+        text-align: center;   
+        grid-template-columns: repeat(5, auto) ;
+        grid-template-rows: repeat(3, 2fr) ;
+        grid-template-areas: 
+            ".  player .       com ."
+            ".  player versus  com ."
+            ".  player reset   com ." ;
+    }
+
+    #main-content div {
+        /* border: 2px solid red; */
+    }
+
+    #player {
+        grid-area : player;
+    }
+
+    #player div {
+        margin : 1.5rem;
+        border-radius: 10px;
+    }
+
+    #versus {
+        grid-area : versus;
+        padding-top : 30px;
+        font-size : 1.4em;
+        color : #B22222 ;
+        font-weight:bolder;
+        /* font-size: 50px; */
+    }
+
+    #com {
+        grid-area : com;
+    }
+
+    #com div {
+        margin : 1.5rem;
+        border-radius: 10px;
+    }
+
+    #reset {
+        grid-area : reset;
+        padding-top : 90px;
+    }
+
+    .playerWin, .draw, .comWin {
+        font-family: arial;
+        background-color: #4c9654;
+        color: white;
+        width : 5rem;
+        height: 2rem;
+        padding: 1.01rem;
+        font-size:0.8rem;
+        border-radius: 8px;
+        transform: rotate(-25deg);
+        position :absolute;  
+        z-index: 1; 
+        margin-left : 15px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* ============== MOBILE : TABLET ==============*/
+@media only screen and (max-width: 770px){
+
+    .playerWin, .draw, .comWin {
+        font-family: arial;
+        background-color: #4c9654;
+        color: white;
+        width : 5rem;
+        height: 2rem;
+        padding: 1.01rem;
+        font-size:0.8rem;
+        border-radius: 8px;
+        transform: rotate(-25deg);
+        position :absolute; 
+        z-index: 1; 
+        margin-left : -10px;
+        text-align : center;
+        align-items : center;
+    }
+}
+/* ============== MOBILE : PHONE ==============*/
+@media only screen and (max-width: 428px){
+    .playerWin, .draw, .comWin {
+        font-family: arial;
+        background-color: #4c9654;
+        color: white;
+        width : 5rem;
+        height: 2rem;
+        padding: 1.01rem;
+        font-size:0.8rem;
+        border-radius: 8px;
+        transform: rotate(-25deg);
+        position :absolute;
+        z-index: 1; 
+        margin-left : -40px;
+        text-align: center;
+        align-items: center;
+    }
+}

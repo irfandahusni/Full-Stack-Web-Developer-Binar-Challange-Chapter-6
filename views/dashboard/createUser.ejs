@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>CREATE NEW USER</title>
+</head>
+<body>
+    <div class="container">
+    <h2 style="text-align:center">CREATE NEW USER</h2>
+    <form action="/createUser" method="POST">
+        <div class="row">
+        <label for="userid">UserID (Number)</label>
+        <br>
+        <input type="number" name="userid" placeholder="userid">
+        <br>
+
+        <label for="username">Username</label>
+        <br>
+        <input type="text" name="username" placeholder="username">
+        <br>
+
+        <label for="name">Name</label>
+        <br>
+        <input type="text" name="name" placeholder="name">
+        <br>
+
+        <label for="email">E-mail</label>
+        <br>
+        <input type="email" name="email" placeholder="email">
+        <br>
+        
+        <label for="password">Password</label>
+        <br>
+        <input type="password" name="password" placeholder="Password" required>
+        <br>
+
+        <input type="submit" value="CREATE NEW USER">
+    </form>
+
+    <button type="submit"><a href="/superAdminDashboard">Back to dashboard</a></button>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,284 @@
+@media only screen and (max-width: 768px) {
+
+    body{
+        font-family:'Open Sans';
+        font-size: 12px;
+        font-weight:300;
+    }
+    
+    h1{
+        font-family: 'Bebas Neue';
+        font-weight: bold;
+        font-size: 50px;
+        letter-spacing: 3px;
+    }
+    
+    h2{
+        font-family: 'Bebas Neue';
+        font-weight: bold;
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+    
+    h3{
+        font-family: 'Bebas Neue';
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+.custom-button{
+    width:15vw;
+    height:6vh;
+}
+
+.custom-button p{
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 'Open Sans';
+}
+
+    .first-page {
+        background-image: url("assets/main-bg.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+    }   
+
+    .first-page .container{
+        margin-top:5vh;
+    }
+
+    .first-page .container .icon-container{
+    display:flex;
+    flex-direction: column;
+    /* margin-top:30vh;    */
+    gap:1px;
+}
+
+    .mobile-navbar{
+        order:-1;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items:center;
+        background-color:black;
+    }
+
+    .mobile-navbar ul{
+        list-style:none;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap:5px;
+    }
+
+   .first-page .mobile-navbar a{
+        display: block;
+        background-color: black;
+        color : white;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        font-size:0.8em;
+    }
+  
+    .second-page{
+        background-image: url("assets/the-games-bg.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        padding:10vmin;
+    }
+
+    .third-page{
+        background-image: url("assets/features.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+    }
+
+    #third-page-desktop{
+        display:none;
+    }
+
+    .third-page .mobile-third-page .container-fluid{
+        color:white;
+        padding-top:15vh;
+    }
+
+    .third-page .mobile-third-page li{
+        color:goldenrod;
+        font-size: 20px;;
+    }
+
+    .third-page .mobile-third-page p{
+        color:white;
+        font-size: 15px;;
+    }
+
+    .third-page .mobile-third-page h1{
+        color:white;
+        font-size: 40px;
+    }
+
+    .fourth-page{
+        background-image: url("assets/requirements.png");
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+    }
+
+    #fourth-page-desktop{
+        display:none;
+    }
+
+    .fourth-page .mobile-fourth-page .container-fluid{
+        color:white;
+        padding-top:15vh;
+    }
+
+    .fourth-page .mobile-fourth-page .container-fluid h1{
+        font-size: 20px;
+    }
+
+    .fourth-page .mobile-fourth-page .container-fluid table h4{
+        color:goldenrod;
+        font-size:15px;
+    }
+
+    .fourth-page .mobile-fourth-page .container-fluid table p{
+        color:white;
+        font-size: 10px;
+    }
+
+    .fourth-page .mobile-fourth-page .container-fluid table{
+        border:white;
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+
+    .fifth-page {
+        background-image: url("assets/top-score-bg.png");
+        background-color: rgb(20,20,20);
+        background-size: cover;
+        width: 100%;
+        height: 200vh;
+    }
+
+    /* #fifth-page-desktop{
+        display:none;
+    } */
+
+    .fifth-page .container-fluid 
+
+    .fifth-page .container-fluid .row{
+        /* border:4px solid green; */
+        /* height:150vh; */
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+    .fifth-page .container-fluid .row .col-xs-6{
+        /* padding-left:5vw; */
+    }
+    
+    .fifth-page .container-fluid .row .col-xs-5 h1{
+        margin-top:70px;
+        color:white;
+        font-size: 30px;
+        margin-left:32vw;   
+        /* border:2px solid red; */
+    }
+
+    .fifth-page .container-fluid .row .col-xs-5 h4{
+        color:white;
+        font-size: 15px;
+        margin-left:-3vw; 
+        text-align: center;
+        /* border:2px solid red; */
+    }
+
+    #fifth-page-button{
+        margin-left:200px; 
+    }
+    
+    .circular-square {
+        border-top-left-radius: 50% 50%;
+        border-top-right-radius: 50% 50%;
+        border-bottom-right-radius: 50% 50%;
+        border-bottom-left-radius: 50% 50%;
+      }
+    
+      .circular-landscape {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      
+      .circular-landscape img {
+        width: auto;
+        height: 100%;
+        margin-left: -50px;
+      }
+    
+      .card {
+        background: rgb(25,25,25);
+        border-radius: 30px;
+        padding: 10px 15px;
+        margin: 6vh 6vw 6vh 6vw;
+      }
+      
+      .date {
+        font-size: 14px;
+        /* margin-bottom: 0 !important; */
+        color: grey;
+      }
+    
+      .sentence-testimony{
+          margin-top:2vh;
+          color:white;
+      }
+      
+    .card .profile {
+        display: flex;
+        align-items: center;
+      }
+      
+      .card .name {
+        margin-left: 20px;
+        color: goldenrod;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 20px;
+      }
+      
+      .card .profile .name span {
+        color: #fff;
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+      }
+    
+      #jada{
+        /* left: -20vmin; */
+        /* border-radius: 3px; */
+        text-align: left;
+        /* padding: 13vmin 5vmin 20vmin 10vmin; */
+        z-index: 1;
+      }
+    
+      .card .col-xs{
+          margin-top: -5vh;
+      }
+    
+
+}

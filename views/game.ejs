@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./css/style-game.css">
+    
+    <!--Local CSS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = "header-container">
+        <div id = "header-link"> 
+            <a href="/"><</a> 
+        </div>
+        <div id = "header-logo"> 
+            <img src="self-produced-image/Logo.png" alt=""> 
+        </div>
+        <div id = "header-text"> 
+            <p>ROCK PAPER SCISSOR </p>
+        </div>
+    </div>
+    
+    <div id="main-content">
+        <div id="player">
+            <h2>PLAYER 1</h2>
+            <div class="player-selection">
+                <input type="image" onclick="startGame('rock')" src="assets/batu.png">
+            </div>
+            <div class="player-selection">
+                <input type="image" onclick="startGame('paper')" src="assets/kertas.png">
+            </div>
+            <div class="player-selection">
+                <input type="image" onclick="startGame('scissor')" src="assets/gunting.png">
+            </div>
+        </div>
+
+        <div id="versus">
+            <h2 class="versus">V S</h2>
+        </div>       
+
+        <div id="com">
+            <h2>COM</h2>
+            <div class="com-selection">
+                <input type="image" src="assets/batu.png">
+            </div>
+            <div class="com-selection">
+                <input type="image" src="assets/kertas.png">
+            </div>
+            <div class="com-selection">
+                <input type="image" src="assets/gunting.png">
+            </div>
+        </div>
+
+        <div id="reset">
+            <input type="image" onclick="resetGame()" src="assets/refresh.png">
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="./js/index-game.js"></script>
+
+</html>

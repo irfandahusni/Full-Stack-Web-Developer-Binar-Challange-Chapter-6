@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "irfan",
+    "password": "14321432",
+    "database": "challange_development",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "irfan",
+    "password": "14321432",
+    "database": "challange_test",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "irfan",
+    "password": "14321432",
+    "database": "challange_production",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
